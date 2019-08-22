@@ -19,7 +19,7 @@ async function notifyCustomer() { //menggunakan async untuk menjalankan await(aw
 }
 notifyCustomer(); //jalankan function 
 //NOTE : data diambil sesuai await pertama yg dijalankan (synchronus(dari atas kebawah))
-//NOTE : async & await hanya mengembalikan nilai resolve / yg berhasil dieksekusi
+//NOTE : async & await hanya mengembalikan nilai resolve / yg berhasil dieksekusi atau bisa juga handler error dengan try-catch
 
 function getCustomer(id) {
   return new Promise((resolve, reject) => {
